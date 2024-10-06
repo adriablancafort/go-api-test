@@ -1,8 +1,8 @@
-FROM golang:latest-slim AS builder
+FROM golang:alpine AS builder
 
 WORKDIR /app
 
-COPY go.mod .
+COPY go.mod ./
 
 RUN go mod download
 
