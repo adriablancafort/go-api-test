@@ -1,4 +1,4 @@
-FROM golang:latest AS builder
+FROM golang:latest-slim AS builder
 
 WORKDIR /app
 
